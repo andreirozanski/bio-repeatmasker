@@ -13,13 +13,13 @@ It was developed using http://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/ch
 == Usage
 
 * Open -your_file-:
-file=RptMskr::Parser.open("-your_file-")
+ file=RptMskr::Parser.open("-your_file-")
 
 * Search -your_file- by_id: (Array of IDs)
-IDs=RptMskr::Parser.search_by_id(["2","38"])
+ IDs=RptMskr::Parser.search_by_id(["2","38"])
 
 * Search -your_file- by_field: 
-fields=RptMskr::Parser.search_by_field("subs_percent",["35.2"])
+ fields=RptMskr::Parser.search_by_field("subs_percent",["35.2"])
 
 Based on http://www.repeatmasker.org/webrepeatmaskerhelp.html - fields available are: id, repeat_name, class_name, chromosome, start_coordinate, end_coordinate, strand, n_beyond_match, start_match, end_match, n_prior_match, sw_score, subs_percent, del_percent, ins_percent. 
 
