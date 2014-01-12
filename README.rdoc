@@ -1,0 +1,44 @@
+= bio-repeatmasker
+
+This is a simple, under development raw Repeat Masker output file parser.
+The idea is to help parse, search and filter the file, making easy tasks like selecting groups of repeat events and classes.
+Another feature is to retrieve events in a given genomic coordinate interval. 
+It was developed using http://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/chromOut.tar.gz file.
+
+
+Installation
+
+'gem install bio-repeatmasker'
+
+Usage
+
+Open -your_file-:
+file=RptMskr::Parser.open("-your_file-")
+
+Search -your_file- by_id: (Array of IDs)
+IDs=RptMskr::Parser.search_by_id(["2","38"])
+
+Search -your_file- by_field: 
+fields=RptMskr::Parser.search_by_field("subs_percent",["35.2"])
+**Based on http://www.repeatmasker.org/webrepeatmaskerhelp.html - fields available are: id, repeat_name, class_name, chromosome, start_coordinate, end_coordinate, strand, n_beyond_match, start_match, end_match, n_prior_match, sw_score, subs_percent, del_percent, ins_percent. 
+
+
+Search -your_file- by_coordinate_interval:
+coord_interval=RptMskr::Parser.search_by_coordinate_interval("chr1","73845","76697")
+ 
+
+== Contributing to bio-repeatmasker
+ 
+* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
+* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
+* Fork the project.
+* Start a feature/bugfix branch.
+* Commit and push until you are happy with your contribution.
+* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
+* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+
+== Copyright
+
+Copyright (c) 2014 Andrei Rozanski. See LICENSE.txt for
+further details.
+
