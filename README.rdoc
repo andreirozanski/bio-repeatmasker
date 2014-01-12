@@ -24,8 +24,8 @@ It was developed using http://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/ch
 Based on http://www.repeatmasker.org/webrepeatmaskerhelp.html - fields available are: id, repeat_name, class_name, chromosome, start_coordinate, end_coordinate, strand, n_beyond_match, start_match, end_match, n_prior_match, sw_score, subs_percent, del_percent, ins_percent. 
 
 
-Search -your_file- by_coordinate_interval:
-coord_interval=RptMskr::Parser.search_by_coordinate_interval("chr1","73845","76697")
+* Search -your_file- by_coordinate_interval:
+ coord_interval=RptMskr::Parser.search_by_coordinate_interval("chr1","73845","76697")
  
 
 == Contributing to bio-repeatmasker

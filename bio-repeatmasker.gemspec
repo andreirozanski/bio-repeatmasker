@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.version = "0.0.2"
   s.date = %q{2014-01-11}
   s.summary = %q{bio-repeatmasker}
-  s.description = %q{A simple gem to parse, filter/search raw RepeatMasker output file from GoldenPath}
+  s.description = %q{A simple gem to parse, filter/search raw Repeat Masker output file from GoldenPath}
   s.authors = ["Andrei Rozanski"]
   s.email = %q{andrei@ruivo.org}
   s.files = ["lib/bio-repeatmasker.rb"]
