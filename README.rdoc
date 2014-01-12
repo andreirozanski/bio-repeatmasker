@@ -6,21 +6,22 @@ Another feature is to retrieve events in a given genomic coordinate interval.
 It was developed using http://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/chromOut.tar.gz file.
 
 
-Installation
+== Installation
 
 'gem install bio-repeatmasker'
 
-Usage
+== Usage
 
-Open -your_file-:
+* Open -your_file-:
 file=RptMskr::Parser.open("-your_file-")
 
-Search -your_file- by_id: (Array of IDs)
+* Search -your_file- by_id: (Array of IDs)
 IDs=RptMskr::Parser.search_by_id(["2","38"])
 
-Search -your_file- by_field: 
+* Search -your_file- by_field: 
 fields=RptMskr::Parser.search_by_field("subs_percent",["35.2"])
-**Based on http://www.repeatmasker.org/webrepeatmaskerhelp.html - fields available are: id, repeat_name, class_name, chromosome, start_coordinate, end_coordinate, strand, n_beyond_match, start_match, end_match, n_prior_match, sw_score, subs_percent, del_percent, ins_percent. 
+
+Based on http://www.repeatmasker.org/webrepeatmaskerhelp.html - fields available are: id, repeat_name, class_name, chromosome, start_coordinate, end_coordinate, strand, n_beyond_match, start_match, end_match, n_prior_match, sw_score, subs_percent, del_percent, ins_percent. 
 
 
 Search -your_file- by_coordinate_interval:
