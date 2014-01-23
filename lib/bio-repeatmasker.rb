@@ -73,3 +73,5 @@ module RptMskr
   end
 end  #Parser
 end  #RptMskr
+
+#2Cor3:18
